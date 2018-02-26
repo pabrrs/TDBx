@@ -175,6 +175,12 @@ TDBx.createTable('customer',
 ```
 - **TDBx.SQLite3.ID** = `'ID INTEGER PRIMARY KEY AUTOINCREMENT'`
 - **TDBx.SQLite3.CREATED** = `'created timestamp default current_timestamp'`
+```pascal
+TDBx.createTable('customer', 
+                [TDBx.SQLite3.ID,
+                TDBx.SQLite3.CREATED,
+                'name varchar(255)']);
+```
 --------------------------------------------------------------------------------------------------------
 
 ### Another useful methods
